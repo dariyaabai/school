@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>{{news.title}}</title>
+</head>
+<body>
+<h1>{{news.title}}</h1>
+<p><strong>Category:</strong>{{news.category}}</p>
+<p><strong>Date:</strong>{{news.date|date:"d.m.Y H:i"}}</p>
+<p>{{news.content}}</p>
+<p><a href="{%url 'news_list' %}"></a>All news</p>
+</body>
+</html>
